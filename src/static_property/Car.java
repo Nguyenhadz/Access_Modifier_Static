@@ -1,0 +1,37 @@
+package static_property;
+
+public class Car {
+    private String name;
+    private String engine;
+    public static int numberOfCar;
+    public Car(String a, String b) {
+        this.name = a;
+        this.engine = b;
+        numberOfCar++;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEngine() {
+        return engine;
+    }
+
+    public void setEngine(String engine) {
+        this.engine = engine;
+    }
+
+    public static int getNumberOfCar() {
+        return numberOfCar;
+    }
+
+    public static void setNumberOfCar(int numberOfCar) {
+        Car.numberOfCar = numberOfCar;
+    }
+}
+
